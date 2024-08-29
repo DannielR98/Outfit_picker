@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Outfit Picker</h1>
+
+        <!-- Shirt Upload Section -->
+        <div class="upload-section">
+            <h2>Upload Shirt Images</h2>
+            <input type="file" id="shirtUpload" accept="image/*" multiple>
+        </div>
+
+        <!-- Shirt Display Section -->
+        <div class="display-section" id="shirtDisplay">
+            <button class="nav-button" id="prevShirt">&lt;</button>
+            <img id="currentShirt" src="" alt="Shirt Image" class="hidden">
+            <button class="nav-button" id="nextShirt">&gt;</button>
+        </div>
+
+        <!-- Pant Upload Section -->
+        <div class="upload-section">
+            <h2>Upload Pant Images</h2>
+            <input type="file" id="pantUpload" accept="image/*" multiple>
+        </div>
+
+        <!-- Pant Display Section -->
+        <div class="display-section" id="pantDisplay">
+            <button class="nav-button" id="prevPant">&lt;</button>
+            <img id="currentPant" src="" alt="Pant Image" class="hidden">
+            <button class="nav-button" id="nextPant">&gt;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
